@@ -22,6 +22,7 @@ document.querySelectorAll('.iteration-number')[0].addEventListener('input', func
         const pair = dataSource[index];
         const key = Object.keys(pair)[0];
         const value = (randNumber1 % 2 === 0) ? key : pair[key];
+        resetTile(wordsMeanings[i])
         wordsMeanings[i].innerHTML = value;
         mapping[value] = {gridIndex: i, primaryIndex: index, secondaryIndex: randNumber1 % 2}
     }
@@ -40,7 +41,7 @@ const mapping ={}
 
 let lowerIndex = (iterationNumber-1) * 16;
 let upperIndex = iterationNumber * 16 -1;
-console.log(iterationNumber)
+
 for (i = 0; i < wordsMeanings.length; i++) {
     let randNumber1 = 0;
     do{
@@ -71,6 +72,7 @@ function showSuccessTile(element){
 function resetTile(element){
     element.style.color = "#521c18";
     element.style.backgroundColor = "white";
+    element.style.border= "3px solid #cc9e9b";
 }
 
 const currentValue = [];
