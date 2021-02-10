@@ -1,16 +1,23 @@
 .upper-wrapper{
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 50px;
-    display: flex;
+    margin-bottom: 30px;
+    width: 800px;    
 }
 
-.select-instruction {
-    margin-left: 80px;
+button{
+    background-color: #521c18;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
 }
 
-.iteration-number{
-    margin-left: 20px;
+button:hover{
+    background-color: #cc9e9b;
+    
 }
 
 .main-wrapper{
