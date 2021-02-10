@@ -114,7 +114,6 @@ document.querySelectorAll('.word-meaning').forEach(item => {
         if(currentValue[0] === value){
             return;
         }
-        console.log(mapping)
         let element1 = document.getElementsByClassName('word-meaning')[mapping[value].gridIndex];
         if(currentValue.length < 1){
             currentValue.push(value);
